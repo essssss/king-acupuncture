@@ -12,12 +12,12 @@ export default function Page() {
         },
         {
             name: "Janet Donut",
-            bio: "Janet has been practicing for 12 years and would love to help you with muscle pain and soreness. As a charter member of the Acupuncturist Society of the South (ASS), she is a experienced and ready to help",
+            bio: "Janet has been practicing for 12 years and would love to help you with muscle pain and soreness. As a charter member of the Acupuncturist Society of the South (ASS), she is experienced and ready to help",
             headshot: headshot2,
         },
         {
             name: "John Docent",
-            bio: "John has been practicing for 12 years and would love to help you with muscle pain and soreness. As a charter member of the Acupuncturist Society of the South (ASS), he is a experienced and ready to help",
+            bio: "John has been practicing for 12 years and would love to help you with muscle pain and soreness. As a charter member of the Acupuncturist Society of the South (ASS), he is experienced and ready to help",
             headshot: headshot3,
         },
     ];

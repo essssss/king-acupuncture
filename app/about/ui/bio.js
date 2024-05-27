@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Bio({ name, bio, headshot }) {
     return (
-        <div className="rounded-xl columns-4 flex justify-between bg-gray-100 p-4 m-2 h-64 shadow-sm">
-            <div className="p-3  bg-cyan-100 col-span-3  rounded-md">
+        <div className="rounded-xl flex justify-between bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 p-4 m-2 h-64 shadow-sm max-w-4xl">
+            <div className="p-3 bg-white rounded-l-md">
                 <div className="text-lg text-pink-500  text-center font-medium justify-center flex">
                     {name}
                 </div>
@@ -11,8 +11,13 @@ export default function Bio({ name, bio, headshot }) {
                     {bio}
                 </div>
             </div>
-            <div className="h-60 col-span-1">
-                <Image src={headshot} height={300} />
+            <div className="overflow-hidden flex-none rounded-r-md">
+                <Image
+                    src={headshot}
+                    height={300}
+                    width={200}
+                    alt={`picture of ${bio.name}`}
+                />
             </div>
         </div>
     );
