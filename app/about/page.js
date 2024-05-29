@@ -1,7 +1,7 @@
 import Bio from "./ui/bio";
-import headshot1 from "../../public/headshot1.jpeg";
-import headshot2 from "../../public/headshot2.jpeg";
-import headshot3 from "../../public/headshot3.jpeg";
+import headshot1 from "../../public/headshot1.jpg";
+import headshot2 from "../../public/headshot2.jpg";
+import headshot3 from "../../public/headshot3.jpg";
 
 export default function Page() {
     const practitioners = [
