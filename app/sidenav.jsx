@@ -5,7 +5,7 @@ import logo from "../public/logoipsum-280.svg";
 
 export default function SideNav() {
     return (
-        <div className="m-4 p-4 columns-1 rounded-md bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 md:w-150 flex-none">
+        <div className="md:h-lvh p-4 columns-1 md:mt-4 md:ml-4 md:rounded-t-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500  overflow-auto">
             <Link href="/">
                 <div className="flex items-center justify-center">
                     <Image src={logo} alt="Logo" priority={true} />
