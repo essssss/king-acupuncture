@@ -8,7 +8,7 @@ export default function Service({ title, description, cost }) {
                 {description}
             </div>
             <div className="text-sm text-center text-indigo-500 justify-center flex">
-                ${cost}.00
+                ${cost}
             </div>
         </div>
     );

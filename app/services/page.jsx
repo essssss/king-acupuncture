@@ -1,26 +1,8 @@
 import Service from "./ui/Service";
+import getServices from "../api/data";
 
-export default function Page() {
-    const serviceItems = [
-        {
-            name: "Acupuncture",
-            description:
-                "An acupunture session with one of our top practitioners",
-            cost: 35,
-        },
-        {
-            name: "Massage",
-            description:
-                "A massage session with one of our experienced practitioners",
-            cost: 85,
-        },
-        {
-            name: "Hot Stone",
-            description:
-                "A hot stone session with one of our experienced practitioners",
-            cost: 105,
-        },
-    ];
+export default async function Page() {
+    const services = await getServices();
 
     return (
         <>
@@ -29,14 +11,13 @@ export default function Page() {
                     <div className="justify-center flex font-sans text-2xl font-medium">
                         Services
                     </div>
-                    {serviceItems.map((item) => {
-                        console.log("hi hello");
+                    {services.map((item) => {
                         return (
                             <Service
                                 key={item.name}
                                 title={item.name}
                                 description={item.description}
-                                cost={item.cost}
+                                cost={item.price}
                             />
                         );
                     })}
