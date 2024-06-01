@@ -30,7 +30,6 @@ export default function Page() {
                         Our Practitioners
                     </div>
                     {practitioners.map((item) => {
-                        console.log("hi hello");
                         return (
                             <Bio
                                 key={item.name}
