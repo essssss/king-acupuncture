@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { removeService } from "../../api/data";
 export default function Service({
     title,
     description,
@@ -26,7 +25,7 @@ export default function Service({
                     onClick={() => {
                         handleDelete(id);
                     }}
-                    className="text-center flex items-center justify-center text-indigo-500  bg-pink-400 rounded-xl font-extrabold  h-16 w-16"
+                    className="text-center flex items-center justify-center text-white  bg-pink-400 rounded-xl text-4xl h-16 w-16"
                 >
                     x
                 </button>

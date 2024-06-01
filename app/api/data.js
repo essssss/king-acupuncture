@@ -30,3 +30,8 @@ export async function removeService(id) {
     const res = await sql`DELETE FROM services WHERE id = ${id};`;
     return res;
 }
+
+export async function getServiceById(id) {
+    const service = await sql`SELECT * FROM services WHERE id =${id};`;
+    return service.rows[0];
+}

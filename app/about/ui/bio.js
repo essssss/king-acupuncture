@@ -11,13 +11,13 @@ export default function Bio({ name, bio, headshot }) {
                     {bio}
                 </div>
             </div>
-            <div className="hidden flex-shrink-0 overflow-hidden md:flex justify-center md:flex-none rounded-lg md:rounded-r-lg m-2">
+            <div className="items-center flex-shrink-0 overflow-hidden justify-center md:flex-none rounded-lg md:rounded-r-lg m-2">
                 <Image
                     src={headshot}
                     height={300}
                     width={240}
                     alt={`picture of ${name}`}
-                    className="rounded-lg border border-gray-400"
+                    className="items-center rounded-lg border border-gray-400"
                     priority={true}
                 />
             </div>
