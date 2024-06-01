@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { removeService } from "../../api/data";
 export default function Service({
     title,
@@ -12,7 +13,7 @@ export default function Service({
             <div className="rounded-xl flex items-center justify-between bg-gray-100 p-4 m-2 shadow-sm">
                 <div className="flex-row content-between w-3/4">
                     <div className="text-lg text-pink-500 text-center font-medium justify-center flex">
-                        {title}
+                        <Link href={`/service/${id}`}>{title}</Link>
                     </div>
                     <div className="text-md text-center text-purple-800 justify-center flex">
                         {description}
